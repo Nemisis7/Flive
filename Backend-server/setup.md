@@ -22,6 +22,10 @@ Windows based distributions:
   apt-get install git
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -  
   apt-get install -y nodejs  
+
+Mac based distributions:
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew install node
 ```
 
 You may check if node.js is installed by running this command;
@@ -40,7 +44,7 @@ npm install body-parser
 ```
 
 
-### Setting up on linux based distributions: 
+### Installing apache - linux based distributions: 
 
 Install apache:
 ```bash
@@ -54,9 +58,9 @@ CD to the relevent directory
 cd var/www/html/
 ```
 
-For both Windows, Mac and Linux distributions;
+### Starting the server (all distributions)
 
-Create the file, in this case app.js, paste in the following code:]]
+Create the file, in this case name it app.js, paste in the following code:
 
 ```js
 var connect = require('connect'); // requires the connect module
@@ -100,7 +104,7 @@ app.use(function(req, res) { // utilizes the method "use" of app, the argument b
 
 http.createServer(app).listen(3000); // sets the app to run on port 3000
 ```
-Then you may run the file by wiriting in the bash:
+You may run the file by wiriting in the bash:
 ```bash
 node app.js
 ```
