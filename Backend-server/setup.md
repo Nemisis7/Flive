@@ -104,7 +104,22 @@ app.use(function(req, res) { // utilizes the method "use" of app, the argument b
 
 http.createServer(app).listen(3000); // sets the app to run on port 3000
 ```
-You may run the file by wiriting in the bash:
+You may run the file by executing in the bash:
 ```bash
 node app.js
 ```
+
+If you're using a VPS, you can install pm2, this may be done by executing this in the linux bash
+```bash
+sudo npm install pm2 -g
+```
+
+You'll now be able to run the application with increased metrics, error logging in its own indefinite productions log:
+```bash
+pm2 start app.js
+```
+
+You can then monitor the apps usage by executing
+
+```bash
+pm2 monit app```
