@@ -17,6 +17,11 @@ Linux based distributions
   sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
 
 Windows based distributions:
+
+  https://nodejs.org/en/download/
+  
+Or:
+
   sudo su
   apt-get -y update
   apt-get install git
