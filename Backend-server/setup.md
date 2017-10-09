@@ -127,4 +127,4 @@ pm2 start app.js
 You can then monitor the apps usage by executing
 
 ```bash
-pm2 monit app```
+pm2 monit app
