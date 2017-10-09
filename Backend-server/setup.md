@@ -1,4 +1,4 @@
-Setting up the backend server.
+# Setting up the backend server.
 
 ### Prerequisites:
 ```
